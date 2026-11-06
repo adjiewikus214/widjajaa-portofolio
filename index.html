@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Your Name, a frontend developer building clear, useful digital experiences." />
+    <meta name="author" content="Your Name" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <title>Your Name — Frontend developer</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="theme-color" content="#f8fafc" />
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+
+    <!-- Replace your-domain.example in metadata and sitemap.xml before deployment. -->
+    <link rel="canonical" href="https://your-domain.example/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Your Name Portfolio" />
+    <meta property="og:title" content="Your Name — Frontend developer" />
+    <meta property="og:description" content="Portfolio of Your Name, a frontend developer building clear, useful digital experiences." />
+    <meta property="og:url" content="https://your-domain.example/" />
+    <meta property="og:image" content="https://your-domain.example/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Blueprint-style portfolio title card for Your Name" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your Name — Frontend developer" />
+    <meta name="twitter:description" content="Portfolio of Your Name, a frontend developer building clear, useful digital experiences." />
+    <meta name="twitter:image" content="https://your-domain.example/og-image.png" />
+
+    <script>
+      // Set the theme before first paint so the page never flashes the wrong colors.
+      (function () {
+        try {
+          var stored = localStorage.getItem('portfolio-theme')
+          var theme =
+            stored ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          document.documentElement.dataset.theme = theme
+        } catch {
+          document.documentElement.dataset.theme = 'light'
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
